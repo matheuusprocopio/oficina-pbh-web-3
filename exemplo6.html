@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 05</title>
+    <title>Exemplo 06</title>
 </head>
 <body>
     <script>
@@ -16,11 +16,12 @@
         let num1, num2, soma;
         num1 = prompt("Informe o primeiro numero:");
         num2 = prompt("Informe o segundo numero:");
-        soma = parseInt(num1) + parseInt(num2);
+        soma = parseFloat(num1) + parseFloat(num2);
 
-        alert(`${num1} + ${num2} = ${soma}`)
-        document.write(`${num1} + ${num2} = ${soma}`)
-        console.log(`${num1} + ${num2} = ${soma}`)
+        alert(`${num1} + ${num2} = ${soma}`);
+
+        document.write(`${num1} + ${num2} = ${soma}`);
+        console.log(`${num1} + ${num2} = ${soma}`);
     </script>
 </body>
 </html>

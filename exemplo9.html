@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 08</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            height: 15rem;
+            border: 1px solid #a6a4a4;
+            box-shadow: .3rem .3rem .5rem .01rem #a6a4a4;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .bloco {
+            background-color: blue;
+            color: white;
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem;
+        }
+
+        .par {
+            background-color: blue;
+        }
+
+        .impar {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <script>
+            /*Estrutura Sequencial
+                Comando de saída.
+                Declaração de variável.
+                Comando de entrada.
+                Template String.
+            */
+            let num= parseInt(prompt("Informe o primeiro numero:"));
+
+            if (num % 2 == 0)
+                document.write(`<div class="bloco par">O numero ${num} é par! </div>`);
+            else
+                document.write(`<div class="bloco impar"> O numero ${num} é impar! </div>`);
+
+    </div>
+</body>
+</html>
